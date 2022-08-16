@@ -11,7 +11,12 @@ import funcionario
 
 # IMPORTA PLANILHA EM EXCEL
 planilha = excel.importa_excel("Base.xlsx");
-lista_re = excel.retorna_lista_re(planilha)
+
+#CONECTANDO NO BANCO DE DADOS
+conexao = excel.conecta_bd()
+
+
+# PROGRAMA PRINCIPAL --------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -19,5 +24,3 @@ lista_re = excel.retorna_lista_re(planilha)
 
 
 
-
-    

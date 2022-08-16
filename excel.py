@@ -1,19 +1,28 @@
-from openpyxl import load_workbook
+from openpyxl import workbook,load_workbook
 
-def importa_excel(planilha):
+# IMPORTANDO PLANILHA COM OS DADOS
+def importa_planilha_excel(planilha):
+
     base = load_workbook(f"{planilha}")
     planilha = base.active
     return planilha
+
 
 # FUNÇAO PARA RETORNAR UMA CELULA
 def retorna_dado_celula(planilha, linha, coluna):
      celula  = planilha.cell(roll = linha, column = coluna)
      return celula.value
 
+
 # FUNCAO PARA PREENCHER UMA CELULA
 def preencher_celula(planilha,celula_valor,linha, coluna):
     planilha.cell(row=linha, column= coluna, value = celula_valor)
 
+
+# FUNÇAO PARA RETORNAR UMA CELULA
+def retorna_dado_celula(planilha, linha, coluna):
+    celula  = planilha.cell(roll = linha, column = coluna)
+    return celula.value
 
 # FUNCAO PARA CRIAR UMA LISTA DE RE's
 def retorna_lista_re(planilha):
@@ -25,7 +34,6 @@ def retorna_lista_re(planilha):
             lista_re.append(int(celula.value))
 
     return lista_re
-
 
 # FUNÇAO PARA RETORNAR OS NOMES
 def retorna_lista_nome(planilha):
