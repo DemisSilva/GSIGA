@@ -9,7 +9,7 @@ planilha = excel.importa_planilha_excel("Base.xlsx");
 
 # CONECTANDO NO BANCO DE DADOS
 
-conexao = conecta_bd()
+# conexao = conecta_bd()
 
 
 # PROGRAMA PRINCIPAL --------------------------------------------------------------------------------------------------------------------
@@ -26,6 +26,9 @@ lista_funcionarios = gera_funcionario(lista_re, lista_nome, quantidade_linha, op
 
 # GERANDO SIGA
 siga = Siga(numero_siga, operacao, data, lista_funcionarios)
+
+
+
 
 
 

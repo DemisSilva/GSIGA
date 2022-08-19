@@ -28,7 +28,7 @@ def retorna_dado_celula(planilha, linha, coluna):
 def retorna_lista_re(planilha):
     lista_re =list()
     for celula in planilha["A"]:
-        if celula.value == "RE":
+        if celula.value == "RE do usuário":
             continue
         else:
             lista_re.append(int(celula.value))
@@ -39,7 +39,7 @@ def retorna_lista_re(planilha):
 def retorna_lista_nome(planilha):
     lista_nome = list()
     for celula in planilha["B"]:
-        if celula.value == "Nome":
+        if celula.value == "Nome usuário":
             continue
         else:
             lista_nome.append(celula.value)
